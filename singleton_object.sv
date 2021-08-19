@@ -4,7 +4,7 @@
 class singleton;
 
 //declare class as local to restrict constructor being call outside the class
-static singleton b1;
+static singleton object1;
 
 int A;
 
@@ -17,9 +17,9 @@ function void print();
 endfunction:print
 
 static function singleton get_value();
-  if(b1 == null)
-    b1 = new();
-   return b1; 
+  if(object1 == null )//object1 is null to create new object
+    object1 = new();
+   return object1; 
 endfunction:get_value
 
 endclass
